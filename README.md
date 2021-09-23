@@ -32,7 +32,7 @@ This exercise is an excellent practice of thinking logically to build a applicat
 
 ## 4. Image of the Web Page
 
-![password generator](/password-generator/password-generator.png)
+![password generator](/password-generator/IMG_2003.jpg)
 
 ## 5. Click the link below to visit the Password Generator Website.
 
