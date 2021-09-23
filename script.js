@@ -116,7 +116,7 @@ generateBtn.addEventListener("click", writePassword);
 //Generates the password
 function generatePassword() {
   
-  // ask user for various alert messages written previously
+  // ask the user for various alert messages written previously
   while (profile.length !== null) {
     profile.passwordLength();
     profile.passwordUpperCase();
@@ -124,11 +124,11 @@ function generatePassword() {
     profile.passwordNumeric();
     profile.passwordSpecChar();
 
-    //declares password length and result variables
+    //declares password length and result variables that were chosen
     var rawPasswordLength = profile.rawPassword.length;
     var result = "";
 
-    //generates a password based on the criteria selected
+    //generates a password based on the criteria selected the user selected
     for (var i = 0; i < profile.length; i++) {
       result += profile.rawPassword.charAt(Math.floor(Math.random() * rawPasswordLength));
     }
