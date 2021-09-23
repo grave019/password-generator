@@ -6,7 +6,7 @@ var characterArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "="
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//Declares object variable containing the necessary criteria
+//Declares object variables containing the necessary criteria. The 4 arrays are defined as Boolean
 var profile = {
   length: 0,
   upperCase: false,
@@ -94,7 +94,7 @@ var profile = {
         this.rawPassword += characterArray[specCharRandom];  
       }
     }
-    //validates selections to ensure at least one critera is selected. If none is met the function is repeated
+    //validates selections to ensure at least one of the Boolean objects is selected. If none is met the function is repeated
     else if (this.upperCase === false && this.lowerCase === false && this.numeric === false && this.specChar === false) {
       alert("At least one of the criteria must be selected to generate a password! Please generate a new password.");
       return;
