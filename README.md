@@ -22,7 +22,7 @@ When the Generate Password is clicked on the page the user will go through a ser
 
 ## 3. Implementation
 
-To accomplish this project I used javascript code. I first listed my 4 arrays of characters as variables. Then I declared objects such as length, uppercase, lowercase, numeric, and the rawpassword. Because the user is choosing to add a character as a yes or know these were declared as Booleans. If a object is chosen the Math.floor and Math.random are critcal functions used to provide randomness to the rawpassword. As each object was chosen they added to the rawpassword object distribution. If they are not chosen then the password generator will omit that array of characters. This exercise is an excellent practice of thinking logically to build a application that is functional and useful companies and individuals.
+To accomplish this project I used javascript code. I first listed my 4 arrays of characters as variables. Then I declared objects such as length, uppercase, lowercase, numeric, and the rawpassword. Because the user is choosing to add a character as a yes or know these were declared as Booleans. If a object is chosen the Math.floor and Math.random are critcal functions used to provide randomness to the rawpassword. As each object was chosen they added to the rawpassword object distribution. If they are not chosen then the password generator will omit that array of characters. This exercise is an excellent practice of thinking logically to build a application that is functional and useful to companies and individuals.
 
 ## 4. Image of the Web Page
 
