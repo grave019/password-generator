@@ -22,7 +22,7 @@ var profile = {
     
     //Validates password length to meet criteria requirements
     while (this.length < 8 || this.length > 128 || isNaN(this.length)) {
-      this.length = parseInt(prompt("Your password must be between 8 and 128 Characters. Please choose a password length."));
+      this.length = parseInt(prompt("Your password must be between 8 and 128 Characters! Please choose a password length again."));
     }
     
     //Returns the pasword length
@@ -96,7 +96,7 @@ var profile = {
     }
     //validates selections to ensure at least one critera is selected. If none is met the function is repeated
     else if (this.upperCase === false && this.lowerCase === false && this.numeric === false && this.specChar === false) {
-      alert("At least one of the criteria must be selected to generate a password. Please generate a new password.");
+      alert("At least one of the criteria must be selected to generate a password! Please generate a new password.");
       return;
     }
     return(this.rawPassword);  
