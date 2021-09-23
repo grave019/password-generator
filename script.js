@@ -33,7 +33,7 @@ var profile = {
   passwordUpperCase: function () {
     
     //Prompts user for a selection
-    this.upperCase = confirm("Would you like to include upper case letters in your password?");
+    this.upperCase = confirm("Would you like to include any upper case letters in your password?");
     
     //If true, generates a random upper case letters into the password generator
     if (this.upperCase === true) {
@@ -51,7 +51,7 @@ var profile = {
   passwordLowerCase: function () {
     
     // prompt user for selection
-    this.lowerCase = confirm("Would you like to include lower case letters in your password?");
+    this.lowerCase = confirm("Would you like to include any lower case letters in your password?");
     
     //If true adds lowercase letter rawPassword
     if (this.lowerCase === true) {
@@ -69,7 +69,7 @@ var profile = {
   passwordNumeric: function () {
     
     //prompts the user for selection
-    this.numeric = confirm("Do you want to include numbers in your password?");
+    this.numeric = confirm("Do you want to include any numbers in your password?");
 
     //If true adds numbers to the rawPassword
     if (this.numeric === true) {
@@ -85,13 +85,13 @@ var profile = {
 
   //function to determine whether symbols will be included in the password generator
   passwordSpecChar: function () {   
-    this.specChar = confirm("Would you like to include special characters in your password?");
+    this.specChar = confirm("Would you like to include any special characters in your password?");
     
     //If true add special characters to the rawPassword
     if (this.specChar === true) {
       for (var s = 0; s < profile.length; s++) {
-        var symbolsRandom = Math.floor(Math.random() * characterArray.length);
-        this.rawPassword += characterArray[symbolsRandom];  
+        var specCharRandom = Math.floor(Math.random() * characterArray.length);
+        this.rawPassword += characterArray[specCharRandom];  
       }
     }
     //validates selections to ensure at least one critera is selected. If none is met the function is repeated
